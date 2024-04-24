@@ -11,6 +11,8 @@
         private void FlipCoinBtn_Clicked(System.Object sender, System.EventArgs e)
         {
             // 0 é cara (Heads) e 1 é coroa (Tails)
+
+            /* Metodo antigo
             Moeda moeda = new Moeda();
             moeda.flipCoin();
             CoinImg.Source = moeda.img;
@@ -25,6 +27,9 @@
             {
                 ResultLabel.Text = "Opa! Seu palpite estava errado...";
             }
+
+            */
+
             /*
             int coin = new Random().Next(2);
             int selectedFace = CoinFacePicker.SelectedIndex;
@@ -51,7 +56,7 @@
 
     public class Moeda : Object{
         public TipoMoeda tipo;
-        public String img;
+        public String img = "";
 
         public Moeda() { }
 

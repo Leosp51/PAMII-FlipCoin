@@ -7,35 +7,6 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Image
-                x:Name="CoinImg"
-                Source=""
-                HeightRequest="300"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-
-            <Label
-                x:Name="ResultLabel"
-                Text="Bem vindo!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1"
-                Margin="50"/>
-
-            <Picker
-                x:Name="CoinFacePicker"
-                Title="Escolha a face">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Cara</x:String>
-                        <x:String>Coroa</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
-
-            <Button
-                x:Name="FlipCoinBtn"
-                Text="Jogar Moeda"
-                Clicked="FlipCoinBtn_Clicked"/>
 
         </VerticalStackLayout>
     </ScrollView>
